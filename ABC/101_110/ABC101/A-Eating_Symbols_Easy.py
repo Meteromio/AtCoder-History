@@ -1,5 +1,4 @@
 result = 0
 for y in input():
-  tmp = eval("0"+y+"1")
-  result+=tmp
+  result+=eval("0"+y+"1")
 print(result)
