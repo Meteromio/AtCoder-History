@@ -1,0 +1,5 @@
+A,B,C = input().split()
+AL = list(A)
+BL = list(B)
+CL = list(C)
+print("YES" if AL[len(AL)-1] == BL[0] and BL[len(BL)-1] == CL[0] else "NO")
