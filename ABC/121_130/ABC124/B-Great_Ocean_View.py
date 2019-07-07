@@ -1,12 +1,9 @@
 N = int(input())
-heights = list(map(int,input().split()))
+heights = list(map(int, input().split()))
 result = []
-i = 1
-for x in range(N):
-  if x==0:
+max_height = 0
+for height in heights:
+  if max_height <= height:
     result.append(1)
-  elif i<len(heights) and heights[x] <= heights[i] and heights[i-1] <= heights[i]:
-    print("in")
-    result.append(1)
-  i+=1
-print(result)
+    max_height = height
+print(sum(result))
