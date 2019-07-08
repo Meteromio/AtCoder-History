@@ -1,0 +1,5 @@
+N = int(input())
+Ls = list(map(int, input().split()))
+max_l = max(Ls)
+Ls.remove(max_l)
+print('Yes' if sum([x for x in Ls]) > max_l else 'No')
